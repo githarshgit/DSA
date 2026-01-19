@@ -46,7 +46,26 @@ int main() {
     cout << "vec3 Capacity: " << vec3.capacity() << endl; // Output: vec3 Capacity: 10
     cout << "vec3 Front: " << vec3.front() << endl;       // Output: vec3 Front: 0
     cout << "vec3 Back: " << vec3.back() << endl;         // Output: vec3 Back: 0
+   
+    
+// erase 
+  vector<int> vec4 = {1,2,3,4,5,6,7,8,9,10};
+
+    //erase
+    vec4.erase(vec4.begin()+2);//vec4.erase(position)
+
+    //erase in range 
+    vec4.erase(vec4.begin()+4,vec4.begin()+7); //vec4.erase(start,end)
+
+    for(int i: vec4){
+        cout<<i<<" ";
+    }
+
+
 
     return 0;
 }
-//
+
+
+
+
