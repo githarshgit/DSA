@@ -20,6 +20,7 @@ int missingNumber(vector<int>& nums) {
         }
 
         // If not found, it's the missing number
+        
         if (!found) {
             return i;
         }
